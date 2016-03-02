@@ -21,6 +21,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // On initial load, the "ADD" button should be hidden since it will
+        // only be visible when adding up the multiples that the user entered.
+        addButton.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
