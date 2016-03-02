@@ -10,6 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // MARK: - Properties
+    
+    let MAX_TAPS = 10
+    let MAX_VALUE = 100
+    
+    var currentTaps = 0
+    var totalValue = 0
+    var currentValue = 0
+    
+    
     // MARK: - Outlets
     
     @IBOutlet weak var instructionsLabel: UILabel!
