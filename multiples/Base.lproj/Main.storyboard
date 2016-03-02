@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a multiple:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHL-nj-EzH">
-                                <rect key="frame" x="169" y="145" width="263" height="27"/>
+                                <rect key="frame" x="169" y="174" width="263" height="27"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
                                 <color key="textColor" red="0.76016894978039073" green="0.90943731713889753" blue="0.76416810371076904" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -75,7 +75,7 @@
                             <constraint firstItem="U15-AY-M2j" firstAttribute="leading" secondItem="cAx-jL-QZX" secondAttribute="leading" id="WRh-1N-q2o"/>
                             <constraint firstItem="U15-AY-M2j" firstAttribute="trailing" secondItem="cAx-jL-QZX" secondAttribute="trailing" id="Y2q-hj-lcP"/>
                             <constraint firstItem="AT5-SX-dyT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOL-ox-zSJ"/>
-                            <constraint firstItem="LHL-nj-EzH" firstAttribute="top" secondItem="yBK-ez-Flx" secondAttribute="bottom" constant="66" id="flD-PC-6f2"/>
+                            <constraint firstItem="LHL-nj-EzH" firstAttribute="top" secondItem="yBK-ez-Flx" secondAttribute="bottom" constant="95" id="flD-PC-6f2"/>
                             <constraint firstItem="U15-AY-M2j" firstAttribute="centerX" secondItem="6gA-jz-C84" secondAttribute="centerX" id="gWX-rm-db5"/>
                             <constraint firstItem="yBK-ez-Flx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hXN-WX-1K1"/>
                             <constraint firstItem="LHL-nj-EzH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pdh-vp-dbL"/>
