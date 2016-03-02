@@ -17,6 +17,26 @@ class ViewController: UIViewController {
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var addButton: UIButton!
     
+    
+    // MARK: Actions
+    
+    @IBAction func playButtonTapped(sender: UIButton!) {
+        
+        // Don't continue if the input is empty or invalid (i.e., not an integer).
+        if inputField.text?.isEmpty == false {
+            
+            let number = Int(inputField.text!)
+            
+            if number != nil {
+                playButton.hidden = true
+                addButton.hidden = false
+                instructionsLabel.text = "Press ADD to add!"
+            }
+        }
+    }
+    
+    
+    // MARK: Overrides
 
     override func viewDidLoad() {
         super.viewDidLoad()

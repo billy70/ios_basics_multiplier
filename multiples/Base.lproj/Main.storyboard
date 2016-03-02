@@ -53,6 +53,9 @@
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gA-jz-C84" userLabel="Play button">
                                 <rect key="frame" x="238" y="454" width="124" height="126"/>
                                 <state key="normal" image="Stickie notepad"/>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlF-3s-BaU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.47558739735427841" green="0.54053144329124436" blue="0.61213596204188481" alpha="1" colorSpace="calibratedRGB"/>
