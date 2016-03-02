@@ -26,11 +26,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="AT5-SX-dyT">
                                 <rect key="frame" x="169" y="87" width="263" height="200"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-jL-QZX">
-                                <rect key="frame" x="233" y="363" width="135" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a multiple:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHL-nj-EzH">
                                 <rect key="frame" x="169" y="174" width="263" height="27"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
@@ -60,6 +55,11 @@
                                     <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlF-3s-BaU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-jL-QZX">
+                                <rect key="frame" x="233" y="209" width="135" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.47558739735427841" green="0.54053144329124436" blue="0.61213596204188481" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -71,9 +71,9 @@
                             <constraint firstItem="LHL-nj-EzH" firstAttribute="trailing" secondItem="AT5-SX-dyT" secondAttribute="trailing" id="NZn-Jo-P1h"/>
                             <constraint firstItem="U15-AY-M2j" firstAttribute="trailing" secondItem="cAx-jL-QZX" secondAttribute="trailing" id="OgI-cX-3xO"/>
                             <constraint firstItem="6gA-jz-C84" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U5k-BE-6Ab"/>
-                            <constraint firstItem="6gA-jz-C84" firstAttribute="top" secondItem="cAx-jL-QZX" secondAttribute="bottom" constant="61" id="Vcn-vQ-aMZ"/>
                             <constraint firstItem="U15-AY-M2j" firstAttribute="leading" secondItem="cAx-jL-QZX" secondAttribute="leading" id="WRh-1N-q2o"/>
                             <constraint firstItem="U15-AY-M2j" firstAttribute="trailing" secondItem="cAx-jL-QZX" secondAttribute="trailing" id="Y2q-hj-lcP"/>
+                            <constraint firstItem="cAx-jL-QZX" firstAttribute="top" secondItem="LHL-nj-EzH" secondAttribute="bottom" constant="8" id="ZsR-Rs-vMl"/>
                             <constraint firstItem="AT5-SX-dyT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOL-ox-zSJ"/>
                             <constraint firstItem="LHL-nj-EzH" firstAttribute="top" secondItem="yBK-ez-Flx" secondAttribute="bottom" constant="95" id="flD-PC-6f2"/>
                             <constraint firstItem="U15-AY-M2j" firstAttribute="centerX" secondItem="6gA-jz-C84" secondAttribute="centerX" id="gWX-rm-db5"/>
