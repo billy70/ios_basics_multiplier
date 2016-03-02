@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: - Properties
     
@@ -74,12 +74,22 @@ class ViewController: UIViewController {
         addButton.hidden = true
     }
     
+    // This method is required due to conforming to the UITextFieldDelegate
+    // protocol so that the keyboard can be hidden when the user taps "Return".
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        inputField.resignFirstResponder()
+        return true
+    }
+    
     
     // MARK: Overrides
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        // This will hide the keyboard after the user taps the "Return" key.
+        self.inputField.delegate = self
         
         // On initial load, the "ADD" button should be hidden since it will
         // only be visible when adding up the multiples that the user entered.
