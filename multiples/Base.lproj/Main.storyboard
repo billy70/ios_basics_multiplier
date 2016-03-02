@@ -78,6 +78,12 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6gA-jz-C84" secondAttribute="bottom" constant="20" id="ygS-lk-xGG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addButton" destination="U15-AY-M2j" id="CzG-Fy-HXb"/>
+                        <outlet property="inputField" destination="cAx-jL-QZX" id="l4p-sH-e4f"/>
+                        <outlet property="instructionsLabel" destination="LHL-nj-EzH" id="UX5-cX-W41"/>
+                        <outlet property="playButton" destination="6gA-jz-C84" id="yRD-hm-HbZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
