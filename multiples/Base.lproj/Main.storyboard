@@ -26,12 +26,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chalkboard" translatesAutoresizingMaskIntoConstraints="NO" id="AT5-SX-dyT">
                                 <rect key="frame" x="169" y="87" width="263" height="200"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Stickie notepad" translatesAutoresizingMaskIntoConstraints="NO" id="q6R-dt-3Is">
-                                <rect key="frame" x="238" y="454" width="124" height="126"/>
-                                <color key="tintColor" red="0.23921568627450981" green="0.3843137254901961" blue="0.23921568627450981" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="123" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-jL-QZX">
-                                <rect key="frame" x="233" y="355" width="135" height="30"/>
+                                <rect key="frame" x="233" y="363" width="135" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -54,25 +50,32 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gA-jz-C84" userLabel="Play button">
+                                <rect key="frame" x="238" y="454" width="124" height="126"/>
+                                <state key="normal" image="Stickie notepad"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.47558739735427841" green="0.54053144329124436" blue="0.61213596204188481" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="AT5-SX-dyT" firstAttribute="top" secondItem="yBK-ez-Flx" secondAttribute="bottom" constant="8" id="031-q4-FF4"/>
                             <constraint firstItem="U15-AY-M2j" firstAttribute="leading" secondItem="cAx-jL-QZX" secondAttribute="leading" id="0SU-EJ-OWM"/>
-                            <constraint firstItem="U15-AY-M2j" firstAttribute="centerX" secondItem="q6R-dt-3Is" secondAttribute="centerX" id="DZe-tN-YMG"/>
+                            <constraint firstItem="cAx-jL-QZX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Byq-2N-pDQ"/>
                             <constraint firstItem="yBK-ez-Flx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="DkR-dL-1jr"/>
-                            <constraint firstItem="q6R-dt-3Is" firstAttribute="top" secondItem="cAx-jL-QZX" secondAttribute="bottom" constant="69" id="KVJ-sV-SCD"/>
+                            <constraint firstItem="U15-AY-M2j" firstAttribute="centerY" secondItem="6gA-jz-C84" secondAttribute="centerY" id="IoJ-Pj-pN3"/>
                             <constraint firstItem="LHL-nj-EzH" firstAttribute="trailing" secondItem="AT5-SX-dyT" secondAttribute="trailing" id="NZn-Jo-P1h"/>
+                            <constraint firstItem="U15-AY-M2j" firstAttribute="trailing" secondItem="cAx-jL-QZX" secondAttribute="trailing" id="OgI-cX-3xO"/>
+                            <constraint firstItem="6gA-jz-C84" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U5k-BE-6Ab"/>
+                            <constraint firstItem="6gA-jz-C84" firstAttribute="top" secondItem="cAx-jL-QZX" secondAttribute="bottom" constant="61" id="Vcn-vQ-aMZ"/>
+                            <constraint firstItem="U15-AY-M2j" firstAttribute="leading" secondItem="cAx-jL-QZX" secondAttribute="leading" id="WRh-1N-q2o"/>
                             <constraint firstItem="U15-AY-M2j" firstAttribute="trailing" secondItem="cAx-jL-QZX" secondAttribute="trailing" id="Y2q-hj-lcP"/>
-                            <constraint firstItem="q6R-dt-3Is" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y5d-DG-fHg"/>
                             <constraint firstItem="AT5-SX-dyT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eOL-ox-zSJ"/>
                             <constraint firstItem="LHL-nj-EzH" firstAttribute="top" secondItem="yBK-ez-Flx" secondAttribute="bottom" constant="66" id="flD-PC-6f2"/>
+                            <constraint firstItem="U15-AY-M2j" firstAttribute="centerX" secondItem="6gA-jz-C84" secondAttribute="centerX" id="gWX-rm-db5"/>
                             <constraint firstItem="yBK-ez-Flx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hXN-WX-1K1"/>
-                            <constraint firstItem="U15-AY-M2j" firstAttribute="centerY" secondItem="q6R-dt-3Is" secondAttribute="centerY" id="mIf-fS-hQn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="q6R-dt-3Is" secondAttribute="bottom" constant="20" id="oop-15-2CS"/>
                             <constraint firstItem="LHL-nj-EzH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pdh-vp-dbL"/>
                             <constraint firstItem="cAx-jL-QZX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="seh-9E-aMC"/>
                             <constraint firstItem="LHL-nj-EzH" firstAttribute="leading" secondItem="AT5-SX-dyT" secondAttribute="leading" id="x0h-Yb-tgl"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6gA-jz-C84" secondAttribute="bottom" constant="20" id="ygS-lk-xGG"/>
                         </constraints>
                     </view>
                 </viewController>
