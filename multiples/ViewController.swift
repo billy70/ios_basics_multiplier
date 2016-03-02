@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     var currentTaps = 0
     var totalValue = 0
-    var currentValue = 0
+    var inputValue = 0
     
     
     // MARK: - Outlets
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
             let number = Int(inputField.text!)
             
             if number != nil {
-                currentValue = number!
+                inputValue = number!
                 inputField.hidden = true
                 playButton.hidden = true
                 addButton.hidden = false
@@ -50,13 +50,13 @@ class ViewController: UIViewController {
     @IBAction func addButtonTapped(sender: UIButton!) {
         
         currentTaps += 1
-        instructionsLabel.text = "\(totalValue) + \(currentValue) = \(totalValue + currentValue)"
+        instructionsLabel.text = "\(totalValue) + \(inputValue) = \(totalValue + inputValue)"
 
         if currentTaps > MAX_TAPS || totalValue > MAX_VALUE {
             resetGame()
         }
 
-        totalValue += currentValue
+        totalValue += inputValue
     }
 
     
@@ -66,7 +66,7 @@ class ViewController: UIViewController {
         
         currentTaps = 0
         totalValue = 0
-        currentValue = 0
+        inputValue = 0
         
         instructionsLabel.text = "Enter a multiple:"
         inputField.hidden = false
