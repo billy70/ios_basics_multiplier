@@ -47,6 +47,18 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func addButtonTapped(sender: UIButton!) {
+        
+        currentTaps += 1
+        instructionsLabel.text = "\(totalValue) + \(currentValue) = \(totalValue + currentValue)"
+
+        if currentTaps > MAX_TAPS || totalValue > MAX_VALUE {
+            resetGame()
+        }
+
+        totalValue += currentValue
+    }
+
     
     // MARK: Methods
     
