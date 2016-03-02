@@ -38,11 +38,28 @@ class ViewController: UIViewController {
             let number = Int(inputField.text!)
             
             if number != nil {
+                currentValue = number!
+                inputField.hidden = true
                 playButton.hidden = true
                 addButton.hidden = false
                 instructionsLabel.text = "Press ADD to add!"
             }
         }
+    }
+
+    
+    // MARK: Methods
+    
+    func resetGame() {
+        
+        currentTaps = 0
+        totalValue = 0
+        currentValue = 0
+        
+        instructionsLabel.text = "Enter a multiple:"
+        inputField.hidden = false
+        playButton.hidden = false
+        addButton.hidden = true
     }
     
     
